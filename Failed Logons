@@ -1,1 +1,0 @@
-where (destination_account = user_name and source_json.eventCode = 4625)
