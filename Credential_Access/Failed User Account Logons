@@ -1,0 +1,1 @@
+where (destination_account = username and source_json.eventCode = 4625)
