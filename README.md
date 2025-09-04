@@ -1,6 +1,6 @@
-# InsightIDR LEQL Queries for Threat Detection & Incident Response
+# InsightIDR LEQL Queries for IR
 
-A collection of practical and high-signal **Log Entry Query Language (LEQL)** queries designed for use in **Rapid7 InsightIDR**. These queries are tailored to support threat hunting, anomaly detection, and incident response across cloud and endpoint environments.
+A collection of practical and high-signal **Log Entry Query Language (LEQL)** queries designed for use in **Rapid7 InsightIDR**. These queries are tailored to support threat hunting and incident response across cloud and endpoint environments.
 
 ---
 
@@ -19,13 +19,13 @@ The focus is on:
 
 Each folder represents a core category of detection or response need:
 
-- `Initial_Access/` — Phishing indicators, suspicious user agents, external RDP attempts
-- `Lateral_Movement/` — SMB logins, Pass-the-Hash, RDP relay detection
-- `Credential_Access/` — Authentication failures, brute force attempts, password spray
-- `Persistence/` — Scheduled task abuse, new services, registry key modifications
+- `Initial_Access/` — Phishing indicators, external RDP attempts
+- `Lateral_Movement/` — SMB logins, RDP relay detection
+- `Credential_Access/` — Authentication failures, password spray
+- `Persistence/` — Scheduled task abuse, registry key modifications
 - `Exfiltration/` — Cloud storage access anomalies, large file transfers
-- `Defense_Evasion/` — Log clearing, PowerShell obfuscation, process tampering
-- `User_Behavior/` — Impossible travel, MFA bypass, login anomalies
+- `Defense_Evasion/` — Log clearing, process tampering
+- `User_Behavior/` — Impossible travel, MFA bypass
 - `Endpoint_Hunting/` — Suspicious command line patterns, rare process execution
 - `Cloud_Monitoring/` — Suspicious OAuth app grants, abnormal login sources
 - `General_Hunting/` — Environment-agnostic queries for broader visibility
@@ -36,7 +36,7 @@ Each folder represents a core category of detection or response need:
 ## How to Use
 
 1. Log in to **InsightIDR** and go to **Log Search** or **Legacy Log Search**.
-2. Copy a LEQL query from the relevant `.leql` file or folder.
+2. Copy a LEQL query from the relevant folder.
 3. Paste it into the log search bar or **custom alert rules**.
 4. Modify key fields like:
    - `asset.ip`
