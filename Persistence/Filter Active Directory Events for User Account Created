@@ -1,0 +1,2 @@
+where(source_json.eventCode=4720 AND target_account=username)
+// Correlate with Event ID 4672 and 4624 for better context
